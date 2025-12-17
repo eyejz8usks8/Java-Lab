@@ -1,0 +1,70 @@
+import java.util.Scanner; 
+public class Studentgrade { 
+public static void main(String[] args) { 
+Scanner sc = new Scanner(System.in); 
+System.out.println("Enter your marks: "); 
+int num = sc.nextInt(); 
+if (num>= 80 && num<=100) { 
+System.out.println("Congratulations! You have achieved an A+ in the Exam."); 
+} 
+else if (num>=75&& num<80) { 
+System.out.println("You have achieved an A in the Exam."); 
+} 
+else if (num>=70 && num< 75) { 
+System.out.println("You have achieved an A- in the Exam."); 
+} 
+else if (num>=65 && num< 70) { 
+System.out.println("You have achieved a B+ in the Exam."); 
+} 
+else if (num>=60 && num< 65) { 
+System.out.println("You have achieved a B in the Exam."); 
+} 
+else if (num>=55 && num<60) { 
+System.out.println("You have achieved a B- in the Exam."); 
+} 
+else if (num>=50 && num<55) { 
+System.out.println("You have achieved a C+ in the Exam."); 
+} 
+else if (num>=45 && num<50) { 
+System.out.println("You have achieved a C in the Exam."); 
+} 
+else if (num>=40 && num<45) { 
+System.out.println("You have achieved a D in the Exam."); 
+} 
+else if (num>100 || num<0) { 
+System.out.println("Invalid Number"); 
+} 
+else { 
+System.out.println("You have achieved a F in the Exam."); 
+}
+ sc.close(); 
+} 
+}
+
+
+
+import java.util.Scanner;
+public class Calculation {
+ public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Two Numbers:");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+      System.out.println("Choose operation: 1 for (+), 2 for (-), 3 for (*), 4 for (/):");
+        int operation = sc.nextInt();
+      switch (operation) {
+            case 1: System.out.println("Sum: " + (num1 + num2)); break;
+            case 2: System.out.println("Subtraction: " + (num1 - num2)); break;
+            case 3: System.out.println("Multiplication: " + (num1 * num2)); break;
+            case 4:
+                if (num2 != 0) System.out.println("Division: " + ((double) num1 / num2));
+                else System.out.println("Error: Division by zero is not allowed.");
+                break;
+            default: System.out.println("Invalid operation selected.");
+        }
+        sc.close();
+    }  
+}
+
+
+
